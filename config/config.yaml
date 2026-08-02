@@ -1,0 +1,20 @@
+project:
+  name: mlops-energy-forecasting
+
+data:
+  raw_path: data/raw
+  processed_path: data/processed
+
+model:
+  algorithm: xgboost
+
+training:
+  test_size: 0.2
+  random_state: 42
+
+mlflow:
+  tracking_uri: mlruns
+
+api:
+  host: 127.0.0.1
+  port: 8000
